@@ -1,199 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Odonto Plus + Depósito Dental</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-<!-- JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Odonto Plus + Depósito Dental",
-  "url": "https://TU_USUARIO.github.io/Odonto-Plus.com.ec",
-  "image": [
-    "logo.png",
-    "local1.jpg",
-    "local2.jpg",
-    "interno1.jpg",
-    "interno2.jpg",
-    "tarjeta_presentacion.jpg"
-  ],
-  "logo": "logo.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Eplicachima y Mariano Samaniego",
-    "addressLocality": "Barrio El Pedestal, Loja",
-    "addressCountry": "EC"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -4.003,
-    "longitude": -79.204
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "07:00",
-      "closes": "19:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Sunday",
-      "opens": "07:00",
-      "closes": "12:00"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odonto Plus + Depósito Dental</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
     }
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+593989266227",
-    "contactType": "customer service",
-    "availableLanguage": "Spanish"
-  },
-  "sameAs": [
-    "https://www.facebook.com/share/1ASGabaQ2s/",
-    "https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6",
-    "https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1",
-    "https://wa.me/593989266227"
-  ]
-}
-</script>
-
-<style>
-/* Reset básico */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Body y fondo */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background: url('fondo-dental.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-}
-
-/* Encabezado */
-header {
-    background: rgba(0,86,179,0.9);
-    color: #fff;
-    text-align: center;
-    padding: 60px 20px;
-}
-header h1 {
-    font-size: 3em;
-}
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Secciones */
-.section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 30px;
-    background: rgba(255,255,255,0.95);
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-.section h2 {
-    color: #0056b3;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-/* Imágenes profesionales */
-img {
-    max-width: 100%;
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-/* Botones redes sociales */
-.social a {
-    display: inline-block;
-    margin: 10px 15px;
-    padding: 12px 25px;
-    background-color: #0056b3;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-.social a:hover {
-    background-color: #003d80;
-    transform: translateY(-3px);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 25px;
-    background-color: #0056b3;
-    color: white;
-}
-
-/* Responsive */
-@media (max-width:768px){
-    header h1 { font-size:2em; }
-    .social a { padding: 10px 15px; margin:5px; }
-}
-</style>
+    header {
+      background-color: #005f99;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-height: 80px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #005f99;
+    }
+    .catalogo {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .catalogo img {
+      max-width: 90%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .controls {
+      margin-top: 15px;
+    }
+    .controls button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #005f99;
+      color: white;
+      cursor: pointer;
+    }
+    .controls button:hover {
+      background-color: #004070;
+    }
+    .controls input {
+      width: 60px;
+      padding: 5px;
+      text-align: center;
+    }
+    footer {
+      background-color: #005f99;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-
-<header>
+  <header>
+    <img src="logo1.png" alt="Odonto Plus + Logo">
     <h1>Odonto Plus + Depósito Dental</h1>
-    <p>Tu aliado confiable en productos dentales de calidad</p>
-</header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-<div class="section" id="about">
+  <section id="inicio">
+    <h2>Bienvenidos a Odonto Plus +</h2>
+    <p>Excelencia clínica entregada. Tu socio estratégico en suministros dentales de calidad.</p>
+  </section>
+
+  <section id="nosotros">
     <h2>Sobre Nosotros</h2>
-    <p>Odonto Plus es tu depósito dental de confianza en Loja. Ofrecemos productos de calidad para clínicas y profesionales dentales, con atención personalizada y rápida entrega.</p>
-</div>
+    <p><strong>Detrás de la Marca: La Visión de Odonto Plus +</strong></p>
+    <p>En el núcleo de Depósito Dental Odonto Plus + no solo encontrará un inventario; hallará una visión clara: la Odontología profesional merece un proveedor que opere sin fallos.</p>
+    <p>Hemos diseñado cada aspecto de nuestra operación para ser el aliado estratégico que su clínica necesita. Esto significa que cada producto es seleccionado y validado con una rigurosidad implacable, eligiendo solo los materiales y equipos en los que confiaríamos plenamente.</p>
+    <p>Nuestra misión es simple, pero poderosa: liberarle de las preocupaciones del suministro para que pueda enfocarse totalmente en la excelencia clínica.</p>
+  </section>
 
-<div class="section" id="local">
-    <h2>Nuestras Instalaciones</h2>
-    <img src="local1.jpg" alt="Local 1">
-    <img src="local2.jpg" alt="Local 2">
-    <img src="interno1.jpg" alt="Interno 1">
-    <img src="interno2.jpg" alt="Interno 2">
-</div>
-
-<div class="section" id="branding">
-    <h2>Logotipo y Tarjeta de Presentación</h2>
-    <img src="logo.png" alt="Logotipo Odonto Plus">
-    <img src="tarjeta_presentacion.jpg" alt="Tarjeta de Presentación">
-</div>
-
-<div class="section" id="contact">
-    <h2>Contacto y Redes Sociales</h2>
-    <p><strong>Dirección:</strong> Eplicachima y Mariano Samaniego, Barrio El Pedestal, Loja</p>
-    <p><strong>Teléfono:</strong> +593989266227</p>
-    <p><strong>Horario:</strong> Lun-Sab 07:00-19:00, Dom 07:00-12:00</p>
-    <div class="social">
-        <a href="https://www.facebook.com/share/1ASGabaQ2s/" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1" target="_blank">TikTok</a>
-        <a href="https://wa.me/593989266227" target="_blank">WhatsApp</a>
+  <section id="productos">
+    <h2>Catálogo de Productos</h2>
+    <div class="catalogo">
+      <img id="catalogoImagen" src="Catalogoodontoplus_page-0001.jpg" alt="Catálogo Odonto Plus +">
+      <div class="controls">
+        <button onclick="anteriorPagina()">Anterior</button>
+        <input type="number" id="paginaInput" min="1" max="72" value="1">
+        <button onclick="irAPagina()">Ir</button>
+        <button onclick="siguientePagina()">Siguiente</button>
+      </div>
+      <p>Página <span id="paginaActual">1</span> de 72</p>
     </div>
-</div>
+  </section>
 
-<footer>
-    <p>&copy; 2025 Odonto Plus + Depósito Dental. Todos los derechos reservados.</p>
-</footer>
+  <section id="instalaciones">
+    <h2>Nuestras Instalaciones</h2>
+    <img src="interno1.jpg" alt="Instalación 1" style="max-width:45%; margin:10px;">
+    <img src="interno2.jpg" alt="Instalación 2" style="max-width:45%; margin:10px;">
+  </section>
 
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> Eplicachima y Mariano Samaniego, Barrio El Pedestal, Loja - Ecuador, Código Postal 110103</p>
+    <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/593989266227" target="_blank">+593 989266227</a></p>
+    <p><strong>Redes Sociales:</strong></p>
+    <p>
+      <a href="https://www.facebook.com/share/1ASGabaQ2s/" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1" target="_blank">TikTok</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Odonto Plus + Depósito Dental | Excelencia Clínica. Entregada.</p>
+  </footer>
+
+  <script>
+    let paginaActual = 1;
+    const totalPaginas = 72;
+
+    function actualizarImagen() {
+      document.getElementById("catalogoImagen").src = `Catalogoodontoplus_page-${String(paginaActual).padStart(4, '0')}.jpg`;
+      document.getElementById("paginaActual").textContent = paginaActual;
+      document.getElementById("paginaInput").value = paginaActual;
+    }
+
+    function siguientePagina() {
+      if (paginaActual < totalPaginas) {
+        paginaActual++;
+        actualizarImagen();
+      }
+    }
+
+    function anteriorPagina() {
+      if (paginaActual > 1) {
+        paginaActual--;
+        actualizarImagen();
+      }
+    }
+
+    function irAPagina() {
+      const pagina = parseInt(document.getElementById("paginaInput").value);
+      if (pagina >= 1 && pagina <= totalPaginas) {
+        paginaActual = pagina;
+        actualizarImagen();
+      } else {
+        alert("Por favor ingrese un número de página válido entre 1 y 72");
+      }
+    }
+  </script>
 </body>
 </html>
+
+
 
 
 
