@@ -65,69 +65,95 @@
 </script>
 
 <style>
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Body y fondo */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #e0f2ff, #ffffff);
+    line-height: 1.6;
+    background: url('fondo-dental.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
 }
+
+/* Encabezado */
 header {
-    background-color: #0056b3;
-    color: white;
+    background: rgba(0,86,179,0.9);
+    color: #fff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
 }
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Secciones */
 .section {
     max-width: 1200px;
     margin: 40px auto;
     padding: 30px;
     background: rgba(255,255,255,0.95);
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 .section h2 {
     color: #0056b3;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
+
+/* Imágenes profesionales */
 img {
     max-width: 100%;
     display: block;
-    margin: 15px auto;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+
+/* Botones redes sociales */
 .social a {
     display: inline-block;
-    margin: 10px 10px;
-    padding: 12px 20px;
+    margin: 10px 15px;
+    padding: 12px 25px;
     background-color: #0056b3;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 .social a:hover {
     background-color: #003d80;
+    transform: translateY(-3px);
 }
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background-color: #0056b3;
     color: white;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    header h1 { font-size:2em; }
+    .social a { padding: 10px 15px; margin:5px; }
 }
 </style>
 </head>
 
 <body>
+
 <header>
     <h1>Odonto Plus + Depósito Dental</h1>
-    <p>Calidad y confianza en productos dentales</p>
+    <p>Tu aliado confiable en productos dentales de calidad</p>
 </header>
 
 <div class="section" id="about">
@@ -168,3 +194,5 @@ footer {
 
 </body>
 </html>
+
+
