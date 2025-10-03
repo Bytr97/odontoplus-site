@@ -1,198 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Odonto Plus + Depósito Dental</title>
+    <meta charset="UTF-8">
+    <title>Odonto Plus + Depósito Dental</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-<!-- JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Odonto Plus + Depósito Dental",
-  "url": "https://TU_USUARIO.github.io/Odonto-Plus.com.ec",
-  "image": [
-    "logo.png",
-    "local1.jpg",
-    "local2.jpg",
-    "interno1.jpg",
-    "interno2.jpg",
-    "tarjeta_presentacion.jpg"
-  ],
-  "logo": "logo.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Eplicachima y Mariano Samaniego",
-    "addressLocality": "Barrio El Pedestal, Loja",
-    "addressCountry": "EC"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -4.003,
-    "longitude": -79.204
-  },
-  "openingHoursSpecification": [
+    <!-- JSON-LD para SEO -->
+    <script type="application/ld+json">
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "07:00",
-      "closes": "19:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Sunday",
-      "opens": "07:00",
-      "closes": "12:00"
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Odonto Plus + Depósito Dental",
+      "url": "https://TU_USUARIO.github.io/odontoplus-site",
+      "image": [
+        "logo.png",
+        "local1.jpg",
+        "local2.jpg",
+        "interno1.jpg",
+        "interno2.jpg",
+        "tarjeta_presentacion.jpg"
+      ],
+      "logo": "logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Eplicachima y Mariano Samaniego",
+        "addressLocality": "Barrio El Pedestal, Loja",
+        "addressCountry": "EC"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -4.003,
+        "longitude": -79.204
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "07:00",
+          "closes": "12:00"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+593989266227",
+        "contactType": "customer service",
+        "availableLanguage": "Spanish"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/1ASGabaQ2s/",
+        "https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6",
+        "https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1",
+        "https://wa.me/593989266227"
+      ]
     }
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+593989266227",
-    "contactType": "customer service",
-    "availableLanguage": "Spanish"
-  },
-  "sameAs": [
-    "https://www.facebook.com/share/1ASGabaQ2s/",
-    "https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6",
-    "https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1",
-    "https://wa.me/593989266227"
-  ]
-}
-</script>
+    </script>
 
-<style>
-/* Reset básico */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+    <!-- Font Awesome para iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Qf3Q6c2+oQvQ4a1h4f0uJ2vWZv3YY3p/JZ0vlI1+0y3oNkZBpqF1RZ6D1N6/7gMfF2zPj2b3R6QHczGn0t2Vxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-/* Body y fondo */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background: url('fondo-dental.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-}
-
-/* Encabezado */
-header {
-    background: rgba(0,86,179,0.9);
-    color: #fff;
-    text-align: center;
-    padding: 60px 20px;
-}
-header h1 {
-    font-size: 3em;
-}
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Secciones */
-.section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 30px;
-    background: rgba(255,255,255,0.95);
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-.section h2 {
-    color: #0056b3;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-/* Imágenes profesionales */
-img {
-    max-width: 100%;
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-/* Botones redes sociales */
-.social a {
-    display: inline-block;
-    margin: 10px 15px;
-    padding: 12px 25px;
-    background-color: #0056b3;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-.social a:hover {
-    background-color: #003d80;
-    transform: translateY(-3px);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 25px;
-    background-color: #0056b3;
-    color: white;
-}
-
-/* Responsive */
-@media (max-width:768px){
-    header h1 { font-size:2em; }
-    .social a { padding: 10px 15px; margin:5px; }
-}
-</style>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h1 { color: #0056b3; }
+        img { max-width: 100%; height: auto; margin: 10px 0; }
+        .social a { margin-right: 20px; text-decoration: none; color: #0056b3; font-size: 18px; }
+        .social i { margin-right: 8px; }
+    </style>
 </head>
-
 <body>
-
-<header>
     <h1>Odonto Plus + Depósito Dental</h1>
-    <p>Tu aliado confiable en productos dentales de calidad</p>
-</header>
+    <p><strong>Dirección:</strong> Eplicachima y Mariano Samaniego, Barrio El Pedestal, Loja</p>
+    <p><strong>Teléfono:</strong> +593989266227</p>
+    <p><strong>Horario:</strong> Lun-Sab 07:00-19:00, Dom 07:00-12:00</p>
 
-<div class="section" id="about">
-    <h2>Sobre Nosotros</h2>
-    <p>Odonto Plus es tu depósito dental de confianza en Loja. Ofrecemos productos de calidad para clínicas y profesionales dentales, con atención personalizada y rápida entrega.</p>
-</div>
-
-<div class="section" id="local">
-    <h2>Nuestras Instalaciones</h2>
+    <h2>Nuestras instalaciones</h2>
     <img src="local1.jpg" alt="Local 1">
     <img src="local2.jpg" alt="Local 2">
     <img src="interno1.jpg" alt="Interno 1">
     <img src="interno2.jpg" alt="Interno 2">
-</div>
 
-<div class="section" id="branding">
     <h2>Logotipo y Tarjeta de Presentación</h2>
     <img src="logo.png" alt="Logotipo Odonto Plus">
     <img src="tarjeta_presentacion.jpg" alt="Tarjeta de Presentación">
-</div>
 
-<div class="section" id="contact">
-    <h2>Contacto y Redes Sociales</h2>
-    <p><strong>Dirección:</strong> Eplicachima y Mariano Samaniego, Barrio El Pedestal, Loja</p>
-    <p><strong>Teléfono:</strong> +593989266227</p>
-    <p><strong>Horario:</strong> Lun-Sab 07:00-19:00, Dom 07:00-12:00</p>
+    <h2>Síguenos en redes sociales</h2>
     <div class="social">
-        <a href="https://www.facebook.com/share/1ASGabaQ2s/" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1" target="_blank">TikTok</a>
-        <a href="https://wa.me/593989266227" target="_blank">WhatsApp</a>
+        <a href="https://www.facebook.com/share/1ASGabaQ2s/" target="_blank">
+            <i class="fab fa-facebook-square"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1" target="_blank">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+        <a href="https://wa.me/593989266227" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
     </div>
-</div>
-
-<footer>
-    <p>&copy; 2025 Odonto Plus + Depósito Dental. Todos los derechos reservados.</p>
-</footer>
-
 </body>
 </html>
+
+
 
 
