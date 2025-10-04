@@ -4,92 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odonto Plus + Depósito Dental</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background-color: #005f99;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      max-height: 80px;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1, h2, h3 {
-      color: #005f99;
-    }
-    .catalogo {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .catalogo img {
-      max-width: 90%;
-      height: auto;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-    }
-    .controls {
-      margin-top: 15px;
-    }
-    .controls button {
-      padding: 10px 20px;
-      margin: 5px;
-      border: none;
-      border-radius: 5px;
-      background-color: #005f99;
-      color: white;
-      cursor: pointer;
-    }
-    .controls button:hover {
-      background-color: #004070;
-    }
-    .controls input {
-      width: 60px;
-      padding: 5px;
-      text-align: center;
-    }
-    footer {
-      background-color: #005f99;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    footer a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+
+  <!-- Enlazando style.css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome para íconos -->
+  <script src="https://kit.fontawesome.com/tuKitID.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <img src="logo1.png" alt="Odonto Plus + Logo">
+    <img src="images/logo1.png" alt="Odonto Plus + Logo" id="logo">
     <h1>Odonto Plus + Depósito Dental</h1>
     <nav>
       <a href="#inicio">Inicio</a>
@@ -116,12 +40,12 @@
   <section id="productos">
     <h2>Catálogo de Productos</h2>
     <div class="catalogo">
-      <img id="catalogoImagen" src="Catalogoodontoplus_page-0001.jpg" alt="Catálogo Odonto Plus +">
+      <img id="catalogoImagen" src="images/Catalogoodontoplus_page-0001.jpg" alt="Catálogo Odonto Plus +">
       <div class="controls">
-        <button onclick="anteriorPagina()">Anterior</button>
+        <button onclick="anteriorPagina()" id="btnAnterior">Anterior</button>
         <input type="number" id="paginaInput" min="1" max="72" value="1">
-        <button onclick="irAPagina()">Ir</button>
-        <button onclick="siguientePagina()">Siguiente</button>
+        <button onclick="irAPagina()" id="btnIr">Ir</button>
+        <button onclick="siguientePagina()" id="btnSiguiente">Siguiente</button>
       </div>
       <p>Página <span id="paginaActual">1</span> de 72</p>
     </div>
@@ -129,24 +53,24 @@
 
   <section id="instalaciones">
     <h2>Nuestras Instalaciones</h2>
-    <img src="interno1.jpg" alt="Instalación 1" style="max-width:45%; margin:10px;">
-    <img src="interno2.jpg" alt="Instalación 2" style="max-width:45%; margin:10px;">
+    <img src="images/interno1.jpg" alt="Instalación 1" style="max-width:45%; margin:10px;">
+    <img src="images/interno2.jpg" alt="Instalación 2" style="max-width:45%; margin:10px;">
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
     <p><strong>Dirección:</strong> Eplicachima y Mariano Samaniego, Barrio El Pedestal, Loja - Ecuador, Código Postal 110103</p>
-    <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/593989266227" target="_blank">+593 989266227</a></p>
+    <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/593989266227" target="_blank" id="whatsapp"><i class="fab fa-whatsapp"></i> +593 989266227</a></p>
     <p><strong>Redes Sociales:</strong></p>
     <p>
-      <a href="https://www.facebook.com/share/1ASGabaQ2s/" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6" target="_blank">Instagram</a> |
-      <a href="https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1" target="_blank">TikTok</a>
+      <a href="https://www.facebook.com/share/1ASGabaQ2s/" target="_blank" id="facebook"><i class="fab fa-facebook-f"></i> Facebook</a> |
+      <a href="https://www.instagram.com/odontoplus24?utm_source=qr&igsh=Nmg3eGJmMHQzbmt6" target="_blank" id="instagram"><i class="fab fa-instagram"></i> Instagram</a> |
+      <a href="https://www.tiktok.com/@odontoplus24?_t=ZM-90DpgNTiHc3&_r=1" target="_blank" id="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
     </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Odonto Plus + Depósito Dental | Excelencia Clínica. Entregada.</p>
+    <p>&copy; 2025 Odonto Plus + Depósito Dental | Excelencia Clínica. Todos los derechos reselvados.</p>
   </footer>
 
   <script>
@@ -154,7 +78,7 @@
     const totalPaginas = 72;
 
     function actualizarImagen() {
-      document.getElementById("catalogoImagen").src = `Catalogoodontoplus_page-${String(paginaActual).padStart(4, '0')}.jpg`;
+      document.getElementById("catalogoImagen").src = `images/Catalogoodontoplus_page-${String(paginaActual).padStart(4,'0')}.jpg`;
       document.getElementById("paginaActual").textContent = paginaActual;
       document.getElementById("paginaInput").value = paginaActual;
     }
@@ -185,6 +109,7 @@
   </script>
 </body>
 </html>
+
 
 
 
